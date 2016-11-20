@@ -1,0 +1,72 @@
+body {
+  background-color: #494949;
+  color: #fff;
+}
+table {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  table-layout: fixed;
+  border: 1px solid white;
+}
+table td:hover {
+  background-color: #696969;
+  cursor: pointer;
+}
+table td {
+  width: 133.333px;
+  height: 133.333px;
+  font-size: 35px;
+  transition: 0.4s ease;
+}
+.menuBar {
+  float: right;
+}
+.menuBar .btn {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.mainThing {
+  width: 400px;
+  padding: 0;
+}
+.modal {
+  color: #000;
+}
+.btn:focus, .btn:active {
+  outline: none !important; }
+
+/* Outline Buttons */
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+}
+
+.btn-primary.btn-outline {
+    color: #428bca;
+}
+
+.btn-success.btn-outline {
+    color: #5cb85c;
+}
+
+.btn-info.btn-outline {
+    color: #5bc0de;
+}
+
+.btn-warning.btn-outline {
+    color: #f0ad4e;
+}
+
+.btn-danger.btn-outline {
+    color: #d9534f;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-success.btn-outline:hover,
+.btn-info.btn-outline:hover,
+.btn-warning.btn-outline:hover,
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}

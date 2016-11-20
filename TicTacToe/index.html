@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1>Tic Tac Toe<br /><small>by Spidi Ritsu</small></h1>
+      <hr>
+      <h2>Turn:</h2>
+      <h3><span id="playerNow" style="color: red;">Player X</span></h3>
+      <div class="container-fluid mainThing">
+        <div class="menuBar btn-group btn-group-sm">
+          <button id="restartBtn" type="button" class="btn btn-sm btn-default btn-outline">
+            <span class="glyphicon glyphicon-repeat"></span>
+          </button>
+          <button id="settingsBtn" type="button" class="btn btn-sm btn-default btn-outline">
+            <span class="glyphicon glyphicon-cog"></span>
+          </button>
+        </div>
+        <table border="1" id="board">
+          <tr>
+            <td id="b1" class="b"></td>
+            <td id="b2" class="b"></td>
+            <td id="b3" class="b"></td>
+          </tr>
+          <tr>
+            <td id="b4" class="b"></td>
+            <td id="b5" class="b"></td>
+            <td id="b6" class="b"></td>
+          </tr>
+          <tr>
+            <td id="b7" class="b"></td>
+            <td id="b8" class="b"></td>
+            <td id="b9" class="b"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title text-center">Settings</h4>
+          </div>
+          <div class="modal-body text-center">
+            <h4>Players:</h4>
+            <div class="radio">
+              <label class="radio-inline"><input id="www" type="radio" name="players" value="1">One Player</label>
+              <label class="radio-inline"><input type="radio" name="players" value="2">Two Players</label>
+            </div>
+            <div class="row">
+              <div class="col-xs-6 text-left">
+                <h4>Player 1 Character: <strong><span id="player1Character">X</span></strong></h4>
+              </div>
+              <div class="col-xs-6 text-right">
+                <h4>Player 2 Character: <strong><span id="player2Character">O</span></strong></h4>
+              </div>
+              <div class="container-fluid">
+                <button onclick="swapCharacters()" type="button" class="btn btn-info btn-block btn-outline btn-lg">
+                  Swap Characters
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger btn-outline" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>

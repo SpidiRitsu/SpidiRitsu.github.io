@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple calculator</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="calculator" class="container">
+        <h4 class="text-center">Calculator</h4>
+        <div id="entryBox" class="container-fluid text-right">
+            <div id="input">
+              <p id="answer">0</p>
+            </div>
+            <div id="history">
+              <p>0</p>
+            </div>
+        </div>
+        <div id="buttons" class="container-fluid">
+          <div class="row">
+            <button type="button" class="btn btn-info" value="C">C</button>
+            <button type="button" class="btn btn-info" value='/'>&divide;</button>
+            <button type="button" class="btn btn-info" value='*'>*</button>
+            <button type="button" class="btn btn-info" value='-'>-</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-info" value='7'>7</button>
+            <button type="button" class="btn btn-info" value='8'>8</button>
+            <button type="button" class="btn btn-info" value='9'>9</button>
+            <button type="button" class="btn btn-info" id="plusButton" value='+'>+</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-info" value='4'>4</button>
+            <button type="button" class="btn btn-info" value='5'>5</button>
+            <button type="button" class="btn btn-info" value='6'>6</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-info" value='1'>1</button>
+            <button type="button" class="btn btn-info" value='2'>2</button>
+            <button type="button" class="btn btn-info" value='3'>3</button>
+            <button type="button" class="btn btn-info" id="equalButton" value='='>=</button>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-info" id="zeroButton" value='0'>0</button>
+            <button type="button" class="btn btn-info" value='.'>.</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>

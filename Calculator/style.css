@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Russo+One");
+body {
+  background-color: #3e3e3e;
+  color: #000;
+  font-family: 'Russo One', sans-serif; }
+
+#calculator {
+  font-size: 13px;
+  width: 318px;
+  border: 2px solid teal;
+  border-radius: 12px;
+  background-color: #fff;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-top: 10%;
+  box-shadow: 0px 3px 15px 10px teal, inset 0px -4px 10px 1px #515151; }
+
+#entryBox {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  width: 238px;
+  border: 2px solid #798b2d;
+  height: 60px;
+  padding-top: 5px;
+  background: #afd126; }
+
+#input > p {
+  font-size: 24px; }
+
+#history > p {
+  margin-top: -10px;
+  color: #8ca233;
+  font-size: 12px; }
+
+.row {
+  margin-left: auto;
+  margin-right: auto; }
+
+.btn {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: teal;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 3px 0px 0px #222121, inset -1px -3px 10px 1px #515151;
+  transition: 0.2s; }
+
+.btn:focus, .btn:active {
+  outline: none !important; }
+
+.btn:active {
+  transform: translate(0px, 3px);
+  box-shadow: none; }
+
+#zeroButton {
+  width: 115px !important;
+  border-radius: 12px; }
+
+#equalButton {
+  height: 110px !important;
+  position: absolute;
+  margin-left: 9px;
+  border-radius: 12px; }
+
+#plusButton {
+  height: 110px !important;
+  position: absolute;
+  margin-left: 9px;
+  border-radius: 12px; }
+
+/*# sourceMappingURL=style.css.map */

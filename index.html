@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main Page</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body onload="startup()">
+    <div id="startup" class="text-center container-fluid">
+      <h1 color="#fff;">LOADING!<br>PLEASE WAIT!</h1>
+    </div>
+    <div id="mainContainer" class="hide">
+      <div class="container text-center">
+        <h1>Welcome!<small><br>Enjoy your stay here!</small></h1>
+        <br>
+        <div class="row">
+          <!-- ORDER PRZYCISKOW: danger -> warning -> success -> info -> primary -> default -> repeat  -->
+          <div class="col-md-6 col-xs-6">
+            <div class="container-fluid mainBox">
+              <h2 class="h2Headlines">Projects</h2>
+              <hr>
+              <a href="https://spidiritsu.github.io/TicTacToe/" target="_blank" class="btn btn-danger btn-block">Tic Tac Toe</a>
+              <hr>
+            </div>
+          </div>
+          <div class="col-md-6 col-xs-6">
+            <div class="container-fluid mainBox">
+              <h2 class="h2Headlines">School things</h2>
+              <hr>
+              <a href="https://spidiritsu.github.io/Lazarus/" target="_blank" class="btn btn-warning btn-block">Lazarus</a>
+              <a href="https://spidiritsu.github.io/Excel/" target="_blank" class="btn btn-success btn-block">Excel</a>
+              <a href="https://spidiritsu.github.io/Niemiecki/" target="_blank" class="btn btn-info btn-block">Niemiecki</a>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer" class="text-center">Made by Spidi Ritsu</footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>

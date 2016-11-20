@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lazarus - FeelsBadMan</title>
+    <meta name="description" content="Lazarus ze zdjeciami - FeelsBadMan">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="javascript.js"></script>
+
+  </head>
+  <body>
+    <div class="container text-center">
+      <div class="col-xs-12">
+        <h1>Lazarus - FeelsBadMan</h1>
+        <br>
+        <h3>Spis Tresci Zadan:</h3>
+        <p>
+          Zegar <strong>[latwe]</strong><br>
+          Odbijajaca sie pileczka <strong>[latwe]</strong><br>
+          Kalkulator <strong>[trudniejsze]</strong><br>
+        </p>
+        <p>
+          <h2>Wstep</h2>
+          <hr>
+          <p>
+            Jak zapewnie wiecie wstep musi byc!<br>
+            Na start przepraszam za brak polskich znakow <br>
+            #Koniec wstepu;
+          </p>
+          <br>
+          <h2>Część właściwa</h2>
+          <hr>
+          <p>
+            Zaczynamy od wlaczenia lazarusa. Z tym raczej nie bedzie problemow.<br>
+            By stworzyc projekt nalezy wejsc w "Projekt", a pozniej wybrac "Nowy projekt", a pozniej "Aplikacja" i zatwierdzamy<br />
+            <button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#one">
+              Obrazek
+            </button>
+            <div id="one" class="collapse">
+              <img src="1.jpg" class="img-responsive " alt="Obrazek" />
+              <hr>
+              <img src="2.jpg" class="img-responsive" alt="Obrazek" />
+            </div><br>
+            <hr>
+            <h3>Zegar</h3>
+            Najpierw dodajemy Timer i zmieniamy jego czestotliwosc (1000=1 sekunda) i dodajemy go do kodu poprzez dwuktrotne klikniecie w Inspektorze Obiektow. Odrazu dodajmy do kodu z Inspektora Obiektow cos o Form1: TFrom1<br />
+            <button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#two">
+              Obrazek
+            </button>
+            <div id="two" class="collapse">
+              <img src="Zegar/1.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Zegar/2.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Zegar/3.jpg" class="img-responsive" alt="Obrazek" />
+            </div><br>
+            Dodajemy label i zmieniamy jego nazwe na "Zegar"<br />
+            <button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#three">
+              Obrazek
+            </button>
+            <div id="three" class="collapse">
+              <img src="Zegar/4.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Zegar/5.jpg" class="img-responsive" alt="Obrazek" />
+            </div><br>
+            W kodzie dodajemy zmienna "licznik" w sposob podany na obrazku i ustawiamy jego wartosc na 10. Nastepnie w Timerze dodajemy podane linijki kodu (zmniejszamy wartosc o 1 i wpisujemy je do Labela "Zegar"):<br />
+            <button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#four">
+              Obrazek
+            </button>
+            <div id="four" class="collapse">
+              <img src="Zegar/6.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Zegar/7.jpg" class="img-responsive" alt="Obrazek" />
+            </div><br>
+            No i zegar wykonany!<br />
+            Gratulacje dla mnie!<br />
+            <br><hr>
+            <h3>Odbijajaca sie pileczka<br><small>tu sie mniej rozpisze</small></h3>
+            Dodajemy timer (zobacz wczesniejszy obrazek), zmieniamy interwal timera na 50! i dodajemy "Ksztalt" (<STRONG>NAJLEPIEJ BLISKO LEWEJ KRAWEDZI OKIENKA</STRONG>) jak na obrazku. Zmieniamy nazwe ksztaltu na "Obiekt" i wlasciwosc Shape zmieniamy na stCircle (bedziew wygladac jak kolko). Klikamy na Timer i na TForm w Inspektorze obiektow. Dodajemy zmienna globalna kierunek. Ustawiamy wartosc zmiennej kierunek na powiedzmy 5 [<strong>SPRAWDZ W JAKIEJ PROCEDURZE TO ZMIENIAMY!!!</strong>]. I teraz w procedurze Timera dodajemy podany kod [<strong>sprawdz w jakiej procedurze dodajemy kod</strong>]. Liczba 250 to granica po przekroczeniu ktorej Obiekt zmieni kierunek poruszania sie.<br />
+            <button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#five">
+              Obrazek
+            </button>
+            <div id="five" class="collapse">
+              <img src="Pileczka/1.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Pileczka/2.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Pileczka/3.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Pileczka/4.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Pileczka/5.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Pileczka/6.jpg" class="img-responsive" alt="Obrazek" />
+            </div><br>
+            <br><hr>
+            <h3>Kalkulator</h3>
+            <h4>Wersja prosta bez klawiatury:</h4>
+            Dodajemy dwa pola do wpisywania, cztery przyciski i label. Zmieniamy nazwy przyciskow i tekst na nich. Dla labela Caption bedzie puste i nazwa bedzie "Result". Dla przyciskow zmieniamy caption na + - * / i ich nazwy odpowiednio na Dodaj, Odejmij, Mnoz, Podziel. Klikamy we wszystkie elementy w Inspektorze Obiektow. Dodajemy zmienne globalne. I dodajemy kod jak na zdjeciach. <strong>PAMIETAJ ZE W KODZIE ZAMIAST DZIELENIA JEST "DIV"</strong><br>
+            <button type="button" class="btn btn-info btn-sm" data-toggle="collapse" data-target="#six">
+              Obrazek
+            </button>
+            <div id="six" class="collapse">
+              <img src="Kalkulator/1.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Kalkulator/2.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Kalkulator/3.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Kalkulator/4.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Kalkulator/5.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Kalkulator/6.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Kalkulator/7.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Kalkulator/8.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Kalkulator/9.jpg" class="img-responsive" alt="Obrazek" />
+              <hr>
+              <img src="Kalkulator/10.jpg" class="img-responsive" alt="Obrazek" />
+            </div><br>
+            <br>
+            <hr>
+          </p>
+        </p>
+        <h2>Zakonczenie</h2>
+        <p>
+          Musze przyznac!<br>
+          <strong>Misja zakonczona sukcesem!</strong>
+          <img src="https://media.giphy.com/media/102h4wsmCG2s12/giphy.gif" class="img-responsive" alt="Success!" />
+          Caly szacun idzie dla mnie kek<br><br>
+
+          <h2><strong>SORRY FOR LONG POST! HERE'S A POTATO!</strong><br /><small>Tak naprawde to moj komputer :v</small></h2>
+          <div class="container">
+            <img src="https://pbs.twimg.com/media/CH6FFJcUYAAy1NI.jpg" class="img-responsive" alt="Ziemniak" />
+          </div>
+          <br>
+          <hr>
+          <h4>Wspolpraca xd</h4>
+          Przy kalkulatorze pomogl mi <strong>Bartlomiej Wybraniec</strong>
+        </p>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>

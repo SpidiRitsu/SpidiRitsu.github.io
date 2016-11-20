@@ -1,0 +1,15 @@
+body {
+  background-color: #494949;
+  color: #fff;
+  margin: 0 0;
+  padding: 0;
+}
+hr {
+  width: 75vw;
+}
+h3 {
+  color: red;
+}
+.img-responsive {
+  margin: 0 auto;
+}
