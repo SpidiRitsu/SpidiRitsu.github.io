@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SQL Notes</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../outlineButtons.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body onload="startup()">
+    <div id="startup" class="text-center container-fluid" style="background:url(../gears.gif) no-repeat center center; width: 100vw; height: 100vh; background-color: #9b3430; z-index: 100;">
+      <h1 style="color:#fff">LOADING!<br>PLEASE WAIT!</h1>
+    </div>
+    <div id="mainContainer" style="color: #fff; margin: 0; padding: 0;" class="container-fluid text-center hide">
+      <div style="margin-top: 10px;" class="alert alert-info container">
+        <strong>Informacja!</strong> Po załadowaniu obrazka wciśnij przycisk <kbd>SHOW / HIDE</kbd> by go pokazać!
+      </div>
+      <h1>SQL Notes</h1>
+      <div id="calloutContainer" class="container" style="background-color: #292929; width: 60vw; margin-top: 20px; margin-bottom: 20px; border: 2px solid #fff; border-radius: 8px; padding: 20px;">
+        <h2 style="margin: 0px;">Images Control Center (ICC)</h2>
+        <hr>
+        <!-- ORDER PRZYCISKOW: danger -> warning -> success -> info -> primary -> default -> repeat  -->
+        <button type="button" class="btn btn-danger btn-block" value="1">SQL Notes Image <span>1 LOAD ( ~2.6mb )</span></button>
+        <button type="button" class="btn btn-warning btn-block" value="2">SQL Notes Image <span>2 LOAD ( ~2.6mb )</span></button>
+        <button type="button" class="btn btn-success btn-block" value="3">SQL Notes Image <span>3 LOAD ( ~2.6mb )</span></button>
+        <button type="button" class="btn btn-info btn-block" value="4">SQL Notes Image <span>4 LOAD ( ~2.6mb )</span></button>
+      </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
