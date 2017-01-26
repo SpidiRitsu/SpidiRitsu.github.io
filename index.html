@@ -28,9 +28,9 @@
       <div class="container text-center">
         <h1>Welcome!<small><br>Enjoy your stay here!</small></h1>
         <br>
-        <div class="row">
+        <div class="col-md-6 col-xs-12">
           <!-- ORDER PRZYCISKOW: danger -> warning -> success -> info -> primary -> default -> repeat  -->
-          <div style="margin-bottom: 10px;" class="col-md-6 col-xs-12">
+          <div style="margin-bottom: 15px;" class="col-md-12 col-xs-12">
             <div class="container-fluid mainBox">
               <h2 class="h2Headlines">Projects</h2>
               <hr>
@@ -39,7 +39,16 @@
               <hr>
             </div>
           </div>
-          <div style="margin-bottom: 10px;" class="col-md-6 col-xs-12">
+          <div style="" class="col-md-12 col-xs-12"> <!-- usunalem margin-bottom: 15px bo zawdza i jest overflow! -->
+            <div class="container-fluid mainBox">
+              <h2 class="h2Headlines">Doge</h2>
+              <hr>
+              <img style="border-radius: 6px;" src="shiba-inu.jpg" class="img-responsive" alt="Doge">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div style="margin-bottom: 15px;" class="col-md-12 col-xs-12">
             <div class="container-fluid mainBox">
               <h2 class="h2Headlines">School things</h2>
               <hr>
@@ -49,6 +58,15 @@
               <a href="https://spidiritsu.github.io/SQL/" target="_blank" class="btn btn-primary btn-block">SQL Notes</a>
               <hr>
               <!-- <button type="button" class="btn btn-info btn-block" style="font-size: 16px !important;" disabled>Niemiecki [DISABLED FOR MAINTENANCE]</button> -->
+            </div>
+          </div>
+          <div style="margin-bottom: 15px;" class="col-md-12 col-xs-12">
+            <div class="container-fluid mainBox">
+              <h2 class="h2Headlines">FreeCodeCamp Projects</h2>
+              <hr>
+              <a href="https://morning-hollows-81586.herokuapp.com/" target="_blank" class="btn btn-danger btn-block">Timestamp Microservice</a>
+              <a href="https://rocky-refuge-85178.herokuapp.com/" target="_blank" class="btn btn-warning btn-block">Request Header Parser Microservice</a>
+              <a href="https://stormy-peak-38322.herokuapp.com/" target="_blank" class="btn btn-success btn-block">URL Shortener Microservice</a>
             </div>
           </div>
         </div>
