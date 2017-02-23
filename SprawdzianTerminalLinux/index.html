@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sprawdzian - Terminal Linux</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    	
+    </script>
+
+    <style type="text/css">
+    	body {
+    		background-color: #161616;
+    		color: #fff;
+    		font-family: 'Sansita', sans-serif;
+    		width: 100vw;
+    	}
+    	h1 {
+    		font-size: 50px;
+    	}
+    	a, a:link, a:visited, a:active  {
+    		color: greenyellow;
+    		text-decoration: none;
+    	}
+    	a:hover {
+    		color: orangered;
+    		text-decoration: none;
+    	}
+    	.download {
+    		border: 1px solid #fff;
+    		border-radius: 4px;
+    		background-color: #393939;
+    		font-size: 20px;
+    		padding: 5px;
+    		margin-bottom: 10px;
+    	}
+    	th {
+    		text-align: center;
+    	}
+    	td {
+    		border: 2px solid #fff;
+    		padding: 10px;
+    	}
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="col-xs-12 col-md-12 text-center">
+		<h1>It's Dangerous to Go Alone! Take one of these:</h1>
+		<br>
+		<div class="col-md-2 col-md-offset-2 col-xs-12 download">
+			<a href="Poprawne odpowiedzi - komendy w terminalu linux.ods">Libre Office</a>
+		</div>
+		<div class="col-md-2 col-md-offset-4 col-xs-12 download">
+			<a href="Poprawne odpowiedzi - komendy w terminalu linux.xlsx">Excel</a>
+		</div>
+		<br><br>
+		<hr>
+		<div class="conteiner">
+			<h2>Specialne podziękowania<br>
+				<small>
+					Dla osób, które ułożyły pytania z wszystkimi lub żadnymi poprawnymi odpowiedziami,
+					<br>
+					oraz dwóch osób z pytaniami nie związanymi z tematyką filmów!
+				</small>
+			</h2>
+		</div>
+		<hr>
+		<div class="container">
+			<table>
+			  <thead>
+			    <tr>
+			      <th class="Pytanie-cell">Pytanie</th>
+			      <th class="Odpowiedz-cell">Odpowiedz</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr class="firstRow">
+			      <td class="Pytanie-cell">Którą komendą instalujemy paczki?</td>
+			      <td class="Odpowiedz-cell">apt-get install</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jaką komendą włączamy menadżer plików Midnight Commander?</td>
+			      <td class="Odpowiedz-cell">mc</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Katalog, który zawiera w sobie globalne pliki konfiguracyjne i ustawienie systemowe to:</td>
+			      <td class="Odpowiedz-cell">/etc</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Katalog, który zawiera w sobie pliki binarne to:</td>
+			      <td class="Odpowiedz-cell">/bin</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jak otworzyć terminal skrótem klawiszowym?</td>
+			      <td class="Odpowiedz-cell">ctrl+alt+t</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jaki klawisz służy nam do poruszania się pomiędzy panelami w midnight commander(mc)?</td>
+			      <td class="Odpowiedz-cell">Tab</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Lokalizacją docelową w mc nazywamy?</td>
+			      <td class="Odpowiedz-cell">prawy lub lewy panel</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Do czego służy polecenie tac?</td>
+			      <td class="Odpowiedz-cell">wyświetlanie zawartości pliku w odwrotnej kolejności</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jakim poleceniem ponumerujemy pozycje w pliku?</td>
+			      <td class="Odpowiedz-cell">nl</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Za pomocą jakiej komendy wyświetlamy zawartość katalogu?</td>
+			      <td class="Odpowiedz-cell">ls</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jakiej komendy używamy, kiedy chcemy przejść do innego katologu?</td>
+			      <td class="Odpowiedz-cell">cd</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Wpisanie tej komendy powoduje pokazanie funkcji dla danego programu</td>
+			      <td class="Odpowiedz-cell">man</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Komenda apropos odpowiada za:</td>
+			      <td class="Odpowiedz-cell">pokazanie komendy odpowiadającej danemu wyrazowi</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Komendą służącą do kopiowania plików jest:</td>
+			      <td class="Odpowiedz-cell">cp</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Poleceniem służącym do przenoszenia  plików jest:</td>
+			      <td class="Odpowiedz-cell">cp</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jaka kombinacja klawiszy zatrzymuje proces ?</td>
+			      <td class="Odpowiedz-cell">ctr+z</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jaka kombinacja klawiszy powoduje zamknięcie procesu?</td>
+			      <td class="Odpowiedz-cell">Ctrl + c</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Co wyświetla listę uruchomionych procesów użytkownika ?</td>
+			      <td class="Odpowiedz-cell">ps</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Każdy proces przechowuje w strukturze task_struct następujące identyfikatory procesów, zaznacz właściwy:</td>
+			      <td class="Odpowiedz-cell">state</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jakie polecenie służy do zmienienia nazwy pliku</td>
+			      <td class="Odpowiedz-cell">rename</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Za pomocą jakiego polecenia możliwe jest ustawienie czasu zegara czasowego</td>
+			      <td class="Odpowiedz-cell">BRAK POPRAWNEJ ODPOWIEDZI</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jakim poleceniem można przeszukać podręcznik?</td>
+			      <td class="Odpowiedz-cell">apropos</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jakiego polecenia można użyć do określenia typu komendy?</td>
+			      <td class="Odpowiedz-cell">type</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jakie polecenie domyślnie pozwala wyświetlić 10 pierwszych linijek tekstu?</td>
+			      <td class="Odpowiedz-cell">head</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Które polecenie wyświetla wszystkie linijki programu?</td>
+			      <td class="Odpowiedz-cell">WSZYSTKIE ODPOWIEDZI POPRAWNE</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jakim poleceniem otworzysz strony podręcznika?</td>
+			      <td class="Odpowiedz-cell">man</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jakie polecenie przypomina nam o wczesniej wykonanych poleceniach?</td>
+			      <td class="Odpowiedz-cell">history</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jak otworzyc okno terminala ?</td>
+			      <td class="Odpowiedz-cell">control+alt+t</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jak nazywa się program którego uzywamy podczas kursu ?</td>
+			      <td class="Odpowiedz-cell">terminal</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jak nazywa się komenda wyświetlająca aktualne procesy?</td>
+			      <td class="Odpowiedz-cell">ps</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jak nazywa się komenda pokazująca relacje pomiędzy procesami?</td>
+			      <td class="Odpowiedz-cell">treeps</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jakie polecenie służy do usuniecia pustych katalogów?</td>
+			      <td class="Odpowiedz-cell">rmdir</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jakiego polecenia użyjesz aby usunąc plik?</td>
+			      <td class="Odpowiedz-cell">rm</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jakich znaków używa się przy przekierowaniach</td>
+			      <td class="Odpowiedz-cell">>></td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">do czego w potokach sluzy polecenie less</td>
+			      <td class="Odpowiedz-cell">do przegladania listy za pomocą strzalek \</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jakim poleceniem wyświetlisz zawartość bieżącego katalogu?</td>
+			      <td class="Odpowiedz-cell">dir</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Jakim poleceniem utworzysz nowy katalog?</td>
+			      <td class="Odpowiedz-cell">BRAK POPRAWNEJ ODPOWIEDZI</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Linux: Jak zmienić nazwę istniejącego już pliku?</td>
+			      <td class="Odpowiedz-cell">cp staranazwa.txt nowanazwa.txt</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Linux:Jak skopiować plik1 do istniejącego już katalogu katalog1?</td>
+			      <td class="Odpowiedz-cell">cp plik1 katalog1/</td>
+			    </tr>
+			    <tr>
+			      <td class="Pytanie-cell">Linux: Jakie polecenie wyświetla katalog w którym aktualnie się znajdujemy?</td>
+			      <td class="Odpowiedz-cell">pwd</td>
+			    </tr>
+			    <tr class="lastRow">
+			      <td class="Pytanie-cell">Linux: Jakim poleceniem wyświetlamy wartość katalogu?</td>
+			      <td class="Odpowiedz-cell">PYTANIE BEZ SENSU, PONIEWAZ KATALOG NIE MA WARTOSCI (JEZELI BY SIE CZEPIAL TO MOZNA BY UZNAC ODPOWIEDZ: LS)</td>
+			    </tr>
+			  </tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
