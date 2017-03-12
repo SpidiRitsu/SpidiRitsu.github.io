@@ -65,3 +65,6 @@ hr.gradientSmall {
 	margin-bottom: -10px;
 	font-size: 30px;
 }
+.img-responsive {
+	margin: 0 auto;
+}
