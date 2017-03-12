@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head lang="pl">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IPv4</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="mainWrapper" class="text-center">
+		<div id="header">
+			<h1>IPv4</h1>
+			<hr class="gradient">
+			<h2>Spis treści</h2>
+			<br>
+			<ul>
+				<li><a href="#adres">Co to jest adres IP?</a></li>
+				<li><a href="#strukturaAdresu">Struktura adresu IP</a></li>
+				<li><a href="#strukturaMaski">Struktura maski podsieci</a></li>
+				<li><a href="#adresowanie">Adresowanie</a></li>
+				<li><a href="#obliczanie">Obliczanie na adresach</a></li>
+				<li><a href="#rodzajAdresow">Adres publiczny czy prywatny?</a></li>
+				<li><a href="#nat">Translacja NAT</a></li>
+				<li><a href="#maskiPodsieci">Maski podsieci</a></li>
+				<li><a href="#vlsm">Technika VLSM</a></li>
+			</ul>
+			<h2>Materiały dodatkowe</h2>
+			<ul>
+				<li><a href="#konwersjaBinarna">Konwersja binarna</a></li>
+			</ul>
+		</div>
+		<hr class="gradient">
+		<div id="adres" class="col-xs-12">
+			<h2>Co to jest adres IP?</h2>
+			<p><span class="royalblue">Adres IP to adres interfejsu sieciowego</span>, nie urządzenia.<br>Urządzenie może posiadać kilka interfejsów - np. serwer z dwiema kartami sieciowymi</p>
+			<hr class="gradient">
+		</div>
+		<div id="strukturaAdresu" class="col-xs-12">
+			<h2>Struktura adresu IP</h2>
+			<p>Adres składa się z czterech <span class="royalblue">oktetów</span>
+			<h6>192.168.1.120</h6>
+			a każdy <span class="royalblue">oktet</span> może przyjąć wartość <span class="royalblue">0..255</span>
+			<h6>Adresy IPv4 składają się z 32 bitów!</h6></p>
+			<hr class="gradient">
+		</div>
+		<div id="strukturaMaski" class="col-xs-12">
+			<h2>Struktura maski podsieci</h2>
+			<p>11111111111111111111111100000000
+			<br>
+			<span class="royalblue">zapis binarny (dwójkowy)</span>
+			<h6>255.255.255.0<h6>
+			<span class="royalblue">zapis dziesiętny</span>
+			<h6>/24</h6>
+			<span class="royalblue">zapis skrócony = ilość jedynek w zapisie binarnym<br>(tutaj ammy 24 jedynki w dwójkowym zapisie maski)</span>
+			<br><br>
+			Jedynki w zapisie dwójkowym oznaczają <span class="royalblue">część sieciową</span>,<br>
+			a zera oznaczają <span class="royalblue">część hostów</span>
+			<br><br>
+			Maska musi rozpoczynać się od <span class="royalblue">ciągu jedynek</span> -<br>
+			nie mogą zdarzyć sie zera pomiędzy jedynkami!</p>
+			<hr class="gradient">
+		</div>
+		<div id="adresowanie" class="col-xs-12">
+			<h2>Adresowanie</h2>
+			<p><h6>adresowanie klasowe</h6>
+			z użyciem predefiniowanych klas A B C D E
+			<br>
+			<h6>adresowanie bezklasowe</h6>
+			z użyciem masek, które dzielą adresy na podsieci
+			<br><br>
+			Klasy <span class="royalblue">A B C + D E</span>
+			<br>
+			<span class="royalblue">A</span> 0.0.0.0 - 127.255.255.255
+			<br>
+			<span class="royalblue">B</span> 128.0.0.0 - 191.255.255.255
+			<br>
+			<span class="royalblue">C</span> 192.0.0.0 - 223.255.255.255
+			<br>
+			<span class="royalblue">D</span> 224.0.0.0 - 239.255.255.255
+			<br>
+			<span class="royalblue">adresy grupowe</span>
+			<br>
+			<span class="royalblue">E</span> 240.0.0.0 - 255.255.255.255
+			<br>
+			<span class="royalblue">adresy eksperymentalne</span></p>
+			<hr class="gradient">
+		</div>
+		<div id="obliczanie" class="col-xs-12">
+			<h2>Obliczanie na adresach</h2>
+			<div class="col-xs-6">
+				<span class="royalblue">Adres IP:</span>
+				<h6>192.168.1.145</h6>
+			</div>
+			<div class="col-xs-6">
+				<span class="royalblue">Maska podsieci:<span>
+				<h6>255.255.255.128</h6>
+				<span class="royalblue">zapis skrócony maski:</span>
+				<h6>/25</h6>
+			</div>
+			<p>Musimy obliczyć:
+			<br>
+			- adres sieci (<span class="royalblue">ang.</span> network address)</br>
+			- adres rozgłoszeniowy (<span class="royalblue">ang.</span> broadcast address)</br>
+			- liczbę hostów (+ adres pierwszego i ostatniego)</br>
+			</p>
+			<hr class="gradientSmall">
+			<h3>Obliczamy adres sieci</h3>
+			<p>Krok 1: Musimy zamienić adres IP i maske podsieci na system dwójkowy
+			<br>
+			Krok 2: Zapisujemy pod sobą adres IP i maske podsieci w systemie dwójkowym i przeprowadzamy operacje <span class="royalblue">AND</span> (iloczyn logiczny: <span class="royalblue">przyjmuje wartość 1 tylko jeśli oba bity jednocześnie są jedynkami</span>)
+			<br>
+			Krok 3: Uzyskaną liczbę binarną zamieniamy na system dziesiętny. Liczba ta po zamianie na system dziesiętny jest naszym obliczonym adresem sieci!
+			<img src="adres_sieci.jpg" class="img-responsive"></p>
+			<hr class="gradientSmall">
+			<h3>Obliczamy adres rozgłoszeniowy</h3>
+			<p>Krok 1: Na masce podsieci zapisanej w systemie dwójkowym przeporwadzamy operacje <span class="royalblue">NOT</span> (zamieniamy <span class="royalblue">zera na jedynki</span> i <span class="royalblue">jedynki na zera</span>)
+			<br>
+			Krok 2: Zamieniamy uzyskaną liczbę na postać dziesiętną (<span class="royalblue">oktet do oktetu</span>)
+			<br>
+			Krok 3: Do uzyskanego adresu dodajemy adres sieci. Obliczony adres jest naszym adresem rozgłoszeniowym!
+			<img src="adres_rozgloszeniowy.jpg" class="img-responsive"></p>
+			<hr class="gradientSmall">
+			<h3>Obliczamy liczbę hostów</h3>
+			<p>Do obliczania liczby hostów mamy dwa wzory:
+			<h6>2^(<span class="royalblue">liczba bitów adresu IP</span> - <span class="royalblue">skrócony zapis maski</span>) - 2</h6>
+			<h6>2^(<span class="royalblue">liczba zer w dwójkowym zapisie maski podsieci</span>) - 2</h6>
+			<img src="liczba_hostow.jpg" class="img-responsive"></p>
+			<hr class="gradientSmall">
+			<h3>Określamy adres pierwszego hosta</h3>
+			<p>By określic adres pierwszego hosta stosujemy wzór:
+			<h6><span class="royalblue">adres pierwszego hosta = adres sieci</span> + 1</h6>
+			<img src="adres_pierwszego_hosta.jpg" class="img-responsive"></p>
+			<hr class="gradientSmall">
+			<h3>Określamy adres ostatniego hosta</h3>
+			<p>By określic adres ostatniego hosta stosujemy wzór:
+			<h6><span class="royalblue">adres ostatniego hosta = adres rozgłoszeniowy</span> - 1</h6>
+			<img src="adres_ostatniego_hosta.jpg" class="img-responsive"></p>
+			<hr class="gradient">
+		</div>
+		<div id="rodzajAdresow" class="col-xs-12">
+			<h2>Adres publiczny czy prywatny?</h2>
+			<p><span class="royalblue">Adresy publiczne</span> stosujemy w sieciach rozległych, zaś <span class="royalblue">adresy prywatne</span> w sieciach lokalnych</p>
+			<hr class="gradient">
+		</div>
+		<div id="nat" class="col-xs-12">
+			<h2>Translacje NAT</h2>
+			<p><span class="royalblue">Adres publiczny otrzymujemy od naszego dostawcy internetu</span>
+			<h6>ISP = I<span class="royalblue">nternet</span> S<span class="royalblue">ervice</span> P<span class="royalblue">rovider</span></h6>
+			<br>
+			<h6>NAT
+			<br>
+			<span class="royalblue">(ang.</span> N<span class="royalblue">etwork</span> A<span class="royalblue">ddress</span> T<span class="royalblue">ranslation)</span></h6>
+			Usługa NAT tłumaczy adresy prywatne na publiczne i odwrotnie. Dzięki temu urządzenia w sieci lokalnej mogą korzystać z internetu</p>
+			<hr class="gradient">
+		</div>
+		<div id="maskiPodsieci" class="col-xs-12">
+			<h2>Maski podsieci</h2>
+			<div class="col-xs-6">
+				<span class="royalblue">Adres IP:</span>
+				<h6>192.168.1.0</h6>
+			</div>
+			<div class="col-xs-6">
+				<span class="royalblue">Maska podsieci:<span>
+				<h6>255.255.255.0</h6>
+				<span class="royalblue">zapis skrócony maski:</span>
+				<h6>/24</h6>
+			</div>
+			<p>Polecenia ogólne:
+			<br>
+			- dobierz maskę podsieci, która pozwli podzielić aktualną sieć na <span class="royalblue">X</span> podsieci po <span class="royalblue">Y</span> hostów<br>
+			- wyznacz adres podsieci (adres sieci) dla każdej podsieci
+			- podaj adresy rozgłoszeniowe każdej z pracowni
+			- określ możliwe adresy hostów w każdej z pracowni
+			<br>
+			<br>
+			W tym przypadku <span class="royalblue">X</span> = 4, a <span class="royalblue">Y</span> = 20
+			<hr class="gradientSmall">
+			Krok 1: Zamieniamy maske podsieci na system dwójkowy
+			<br>
+			Krok 2: By podzielić sieć na podsieci zamieniamy zera od lewej strony na jedynki po czym zamieniamy adres podsieci na system dziesiętny
+			<h6>Każda dodatkowa jedynka w masce sprawia, że liczbę sieci mnożymy razy <span class="royalblue">2</span>!</h6>
+			<br>
+			Wzór na liczbę podsieci:
+			<h6>2 ^ n
+			<br>
+			<span class="royalblue">gdzie</span> n <span class="royalblue"> to liczba "oddanych" bitów z części hosta do części sieciowej</h6>
+			<img src="maski_podsieci.jpg" class="img-responsive">
+			<br>
+			<img src="tabelka_podzialu_podsieci.jpg" class="img-responsive"></p>
+			<hr class="gradient">
+		</div>
+		<div id="vlsm" class="col-xs-12">
+			<h2>Technika VLSM</h2>
+			<p><h6>VLSM
+			<br>
+			ang. Variable Length Subnet Mask - zmieniamy długość maski, <span class="royalblue">tak aby uwzględnić zapotrzebowanie</span> na liczbę hostów w podsieci</h6>
+			Technikę tą używamy by tworzyć <span class="royalblue">nieparzystą ilość podsieci</span> z <span class="royalblue">różną ilością hostów</span>
+			<hr class="gradientSmall">
+			Krok 1: Zamieniamy maskę podsieci na system dwójkowy
+			<br>
+			Krok 2: Dzielimy sieć na parzystą ilość podsieci
+			<br>
+			Krok 3: Dzielimy jedną lub więcej podsieci na dwie lub więcej by otrzymać nieparzystą liczbę podsieci. Należy pamiętać o tym by dla podzielonej podsieci utworzyć nowy adres maski!
+			<img src="vlsm_przyklad1.jpg" class="img-responsive">
+			<br>
+			<img src="vlsm_przyklad2.jpg" class="img-responsive"></p>
+			<hr class="gradient">
+		</div>
+		<div id="konwersjaBinarna" class="col-xs-12">
+			<h2>Konwersja binarna</h2>
+			<h6>Z konwersją z systemu dwójkowego na dzięsiętny i na odwrót<br>można się zapoznać w poniższym filmie ( 3:20 - 8:06 )</h6>
+			<div class="embed-responsive embed-responsive-16by9">
+  				<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VUHwfugYFEA" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<hr class="gradient">
+		</div>
+		<a href="#" id="scrollToTop"><span class="glyphicon glyphicon-triangle-top"></span></a>
+	</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body {
+	color: #fff;
+	background-color: #363636;
+	font-size: 16px;
+	font-family: Helvetica;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+#header ul {
+	list-style: none;
+	margin: 10px;
+	padding: 0;
+}
+#header ul li a {
+	background-color: #fff;
+	border: 1px solid #999999;
+	color: #222222;
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: -1px;
+	padding: 10px 10px;
+	text-decoration: none;
+	cursor: pointer;
+}
+#header ul li:first-child a {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+#header ul li:last-child a {
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+h6 {
+	color: chartreuse;
+	font-size: 1.5em;
+}
+.royalblue {
+	color: royalblue;
+}
+hr.gradient {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+hr.gradientSmall {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+    width: 60%;
+}
+#scrollToTop {
+	position: fixed;
+	z-index: 1;
+	background-color: #fff;
+	color: #333;
+	text-decoration: none;
+	bottom: 0px;
+	right: 15px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	border: 1px solid #333;
+	padding: 0 5px;
+	margin-bottom: -10px;
+	font-size: 30px;
+}
