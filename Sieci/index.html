@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sprawdzian - Sieci Zestaw 1/2</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+    	
+    </script>
+
+    <style type="text/css">
+    	body {
+    		background-color: #161616;
+    		color: #fff;
+    		font-family: 'Lato', sans-serif;
+
+    		width: 100vw;
+    	}
+    	h1 {
+    		font-size: 50px;
+    	}
+    	a, a:link, a:visited, a:active  {
+    		color: greenyellow;
+    		text-decoration: none;
+    	}
+    	a:hover {
+    		color: orangered;
+    		text-decoration: none;
+    	}
+    	.download {
+    		border: 1px solid #fff;
+    		border-radius: 4px;
+    		background-color: #393939;
+    		font-size: 20px;
+    		padding: 5px;
+    		margin-bottom: 10px;
+    	}
+    	th {
+    		text-align: center;
+    	}
+    	td {
+    		border: 2px solid #fff;
+    		padding: 10px;
+    	}
+    	.text-center {
+    	    text-align: center;
+    	}
+    </style>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="col-xs-12 col-md-12 text-center">
+		<!--<h1>It's Dangerous to Go Alone! Take one of these:</h1>-->
+		<!--<br>-->
+		<!--<div class="col-md-2 col-md-offset-2 col-xs-12 download">-->
+		<!--	<a href="Poprawne odpowiedzi - komendy w terminalu linux.ods">Libre Office</a>-->
+		<!--</div>-->
+		<!--<div class="col-md-2 col-md-offset-4 col-xs-12 download">-->
+		<!--	<a href="Poprawne odpowiedzi - komendy w terminalu linux.xlsx">Excel</a>-->
+		<!--</div>-->
+		<!--<br><br>-->
+		<!--<hr>-->
+		<!--<div class="conteiner">-->
+		<!--	<h2>Specialne podziękowania<br>-->
+		<!--		<small>-->
+		<!--			Dla osób, które ułożyły pytania z wszystkimi lub żadnymi poprawnymi odpowiedziami,-->
+		<!--			<br>-->
+		<!--			oraz dwóch osób z pytaniami nie związanymi z tematyką filmów!-->
+		<!--		</small>-->
+		<!--	</h2>-->
+		<!--</div>-->
+		<!--<hr>-->
+		<div class="container">
+		    <h1>
+		        <p>Zadanie 1</p>
+		        <br>
+		        <small>
+		            <p>Zbadaj połączenie pomiędzy swoim komputerem, a stroną www.onet.pl:</p>
+		        </small>
+		    </h1>
+		    <table>
+			    <thead>
+			        <tr>
+                        <th class="Pytanie-cell">Pytanie</th>
+                        <th class="Odpowiedz-cell">Odpowiedz</th>
+			        </tr>
+                </thead>
+			    <tbody>
+			        <tr class="firstRow">
+			            <td class="Pytanie-cell">jakiego polecenia diagnostycznego użyjesz?</th>
+			            <td class="Odpowiedz-cell">ping</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">interwal miedzy skokami</td>
+			            <td class="Odpowiedz-cell">-i</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">ilosc pakietow do wyslania</td>
+			            <td class="Odpowiedz-cell">-c</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">wielkosc pakietu</td>
+			            <td class="Odpowiedz-cell">-s</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">ttl</td>
+			            <td class="Odpowiedz-cell">-t</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">timeout (po jakim czasie uzna pakiet za zgubiony)</td>
+			            <td class="Odpowiedz-cell">-w</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">jakie informacje zostaną wyświetlone po jego uruchomieniu?</th>
+			            <td class="Odpowiedz-cell">ilosc bajtow wyslanych na dany adres, numer sekwencji, ttl, time</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">Jakiego polecenia należy użyć, aby przerwać pracę programu?</th>
+			            <td class="Odpowiedz-cell">ctrl+c</td>
+			        </tr>
+			    </tbody>
+			</table>
+			
+			<h1>
+		        <p>Zadanie 2</p>
+		        <br>
+		        <small>
+		            <p>Sprawdź jaką trasę przechodzą pakiety pomiędzy swoim komputerem, a sprawdzanym
+hostem? Jakie informacje uzyskujesz?</p>
+		        </small>
+		    </h1>
+		    <table>
+			    <thead>
+			        <tr>
+                        <th class="Pytanie-cell">Pytanie</th>
+                        <th class="Odpowiedz-cell">Odpowiedz</th>
+			        </tr>
+                </thead>
+			    <tbody>
+			        <tr class="firstRow">
+			            <td class="Pytanie-cell">komenda</td>
+			            <td class="Odpowiedz-cell">traceroute [adres]</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">Argumenty: używa ipv4, używa ipv6, ilosc skokow (ttl)</td>
+			            <td class="Odpowiedz-cell">-4, -6, -m</td>
+			        </tr>
+			        <tr class="lastRow">
+			            <td class="Pytanie-cell">jakie informacje zostaną wyświetlone po jego uruchomieniu?</td>
+			            <td class="Odpowiedz-cell">numer skoku, adres (* oznacza ze router jest ukryty), czas min na odp, czas sredni, czas max</td>
+			        </tr>
+			    </tbody>
+			</table>
+			
+			<h1>
+		        <p>Zadanie 3</p>
+		        <br>
+		        <small>
+		            <p>Jakie narzędzie łączy funkcje opisanych wcześniej programów – pozwala śledzić trasę
+połączenie między dwoma punktami oraz odświeża wyniki w regularnych odstępach czasu?</p>
+		        </small>
+		    </h1>
+		    <table>
+			    <thead>
+			        <tr>
+                        <th class="Pytanie-cell">Pytanie</th>
+                        <th class="Odpowiedz-cell">Odpowiedz</th>
+			        </tr>
+                </thead>
+			    <tbody>
+			        <tr class="firstRow lastRow">
+			            <td class="Pytanie-cell">komenda</td>
+			            <td class="Odpowiedz-cell">mtr</td>
+			        </tr>
+			    </tbody>
+			</table>
+			
+			<h1>
+		        <p>Zadanie 4</p>
+		        <br>
+		        <small>
+		            <p>Jakie polecenie w systemie Linux pozwoli:</p>
+		        </small>
+		    </h1>
+		    <table>
+			    <thead>
+			        <tr>
+                        <th class="Pytanie-cell">Pytanie</th>
+                        <th class="Odpowiedz-cell">Odpowiedz</th>
+			        </tr>
+                </thead>
+			    <tbody>
+			        <tr class="firstRow">
+			            <td class="Pytanie-cell">sprawdzić status urządzenia sieciowego eth0</td>
+			            <td class="Odpowiedz-cell">ifconfig eth0</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">sprawdzić status urządzenia bezprzewodowego eth1</td>
+			            <td class="Odpowiedz-cell">iwconfig eth1</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">wyświetlić dostępne urządzenia sieciowe</td>
+			            <td class="Odpowiedz-cell">ifconfig -a</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">zmienić nazwę urządzenia eth0 na wan</td>
+			            <td class="Odpowiedz-cell">ip link set dev eth0 name wan</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">sprawdzić adresy urządzeń</td>
+			            <td class="Odpowiedz-cell">ip addr show</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">sprawdzić aktywne usługi internetowe</td>
+			            <td class="Odpowiedz-cell">netstat -tupl</td>
+			        </tr>
+			        <tr class="lastRow">
+			            <td class="Pytanie-cell">pokazuje informacje IP dla nazwy DNS</td>
+			            <td class="Odpowiedz-cell">host onet.pl</td>
+			        </tr>
+			    </tbody>
+			</table>
+			
+			<h1>
+		        <p>Zadanie 5</p>
+		        <br>
+		        <small>
+		            <p>W jakim katalogu w systemie Linux znajdują się pliki konfiguracyjne?</p>
+		        </small>
+		    </h1>
+		    <table>
+			    <thead>
+			        <tr>
+                        <th class="Pytanie-cell">Pytanie</th>
+                        <th class="Odpowiedz-cell">Odpowiedz</th>
+			        </tr>
+                </thead>
+			    <tbody>
+			        <tr class="firstRow lastRow">
+			            <td class="Pytanie-cell">globalne ustawienia</td>
+			            <td class="Odpowiedz-cell">/etc</td>
+			        </tr>
+			        <tr class="firstRow lastRow">
+			            <td class="Pytanie-cell">ustawienia uzytkownika</td>
+			            <td class="Odpowiedz-cell">User-specific config is stored in the user's home directory, often as a hidden file, sometimes as a hidden directory containing non-hidden files (and possibly more subdirectories).</td>
+			        </tr>
+			    </tbody>
+			</table>
+			
+			<h1>
+		        <p>Zadanie 6</p>
+		        <br>
+		        <small>
+		            <p>Scharakteryzuj następujące pliki konfiguracyjne:</p>
+		        </small>
+		    </h1>
+		    <table>
+			    <thead>
+			        <tr>
+                        <th class="Pytanie-cell">Pytanie</th>
+                        <th class="Odpowiedz-cell">Odpowiedz</th>
+			        </tr>
+                </thead>
+			    <tbody>
+			        <tr class="firstRow lastRow">
+			            <td class="Pytanie-cell">networks</td>
+			            <td class="Odpowiedz-cell">Entries from /etc/networks are used by tools that try to convert numbers to names, e.g. the (deprecated) route command.</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">HOSTNAME</td>
+			            <td class="Odpowiedz-cell">contains name of the machine, as known to applications that run locally. </td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">hosts</td>
+			            <td class="Odpowiedz-cell">/etc/hosts and DNS associate names with IP addresses</td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">services</td>
+			            <td class="Odpowiedz-cell">It stores information about numerous services that client applications might use on the computer. Within the file is the service name, port number and protocol it uses, and any applicable aliases. </td>
+			        </tr>
+			        <tr>
+			            <td class="Pytanie-cell">host.conf</td>
+			            <td class="Odpowiedz-cell">/etc/host.conf is a short, plain text file that specifies how host (i.e., computer) names on a network are resolved, i.e., matched with their corresponding IP addresses.</td>
+			        </tr>
+			        <tr class="firstRow lastRow">
+			            <td class="Pytanie-cell">resolv.conf</td>
+			            <td class="Odpowiedz-cell">resolv.conf is the name of a computer file used in various operating systems to configure the system's Domain Name System (DNS) resolver.</td>
+			        </tr>
+			    </tbody>
+			</table>
+			
+			
+			
+		</div>
+	</div>
+</body>
+</html>
